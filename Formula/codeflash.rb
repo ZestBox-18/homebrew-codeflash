@@ -1,19 +1,19 @@
 class Codeflash < Formula
   desc "Local network clipboard sync tool for HarmonyOS, iOS, and macOS"
   homepage "https://github.com/ZestBox-18/homebrew-codeflash"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ZestBox-18/homebrew-codeflash/releases/download/v1.0.1/codeflash-server-macos-arm64.tar.gz"
-      sha256 "1ba64b7dcfaccaab1a37fd393fbb922959c7c17f2387036fbf6c30b1ee945049"
+      url "https://github.com/ZestBox-18/homebrew-codeflash/releases/download/v1.0.2/codeflash-server-macos-arm64.tar.gz"
+      sha256 "c2eab2c2c037138e36843a288fe33d52451d6386d16f30f5347b0d4c29faf23a"
 
       def install
         bin.install "codeflash-server-arm64" => "codeflash-server"
       end
     else
-      url "https://github.com/ZestBox-18/homebrew-codeflash/releases/download/v1.0.1/codeflash-server-macos-amd64.tar.gz"
-      sha256 "58d189c0f2946a985efdd4e1f07d97d0870d8a8496b7462a4d38e9fa11b98e0b"
+      url "https://github.com/ZestBox-18/homebrew-codeflash/releases/download/v1.0.2/codeflash-server-macos-amd64.tar.gz"
+      sha256 "1e31e773e96f59f6924375cce03b270d2305abb9e17be37d6f8b38f14b8b7d43"
 
       def install
         bin.install "codeflash-server-amd64" => "codeflash-server"
